@@ -1,0 +1,749 @@
+Archive member included to satisfy reference by file (symbol)
+
+d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+                              Debug\obj\src\tablo.o (__udivmodsi4)
+d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                              d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o (exit)
+d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                              Debug\obj\src\tablo.o (__do_copy_data)
+d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                              Debug\obj\src\tablo.o (__do_clear_bss)
+d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+                              Debug\obj\src\tablo.o (__do_global_ctors)
+d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                              d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o) (__tablejump2__)
+
+Discarded input sections
+
+ .group         0x00000000        0x8 Debug\obj\src\tablo.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000003         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+LOAD Debug\obj\src\clock.o
+LOAD Debug\obj\src\common.o
+LOAD Debug\obj\src\gpio.o
+LOAD Debug\obj\src\main.o
+LOAD Debug\obj\src\tablo.o
+LOAD Debug\obj\src\tim0.o
+LOAD d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a
+LOAD d:\Program Files\GCC\AVRGCC\avr\lib\libm.a
+START GROUP
+LOAD d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a
+LOAD d:\Program Files\GCC\AVRGCC\avr\lib\libm.a
+LOAD d:\Program Files\GCC\AVRGCC\avr\lib\libc.a
+LOAD d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libatmega328p.a
+END GROUP
+                0x00020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x0000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x00010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+                0x00800060                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xb9c
+ *(.vectors)
+ .vectors       0x00000000       0x68 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000068                . = ALIGN (0x2)
+                0x00000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+                0x00000068                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000068                __ctors_start = .
+ *(.ctors)
+ .ctors         0x00000068        0x2 Debug\obj\src\tablo.o
+ .ctors         0x0000006a        0x2 Debug\obj\src\tim0.o
+                0x0000006c                __ctors_end = .
+                0x0000006c                __dtors_start = .
+ *(.dtors)
+                0x0000006c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000006c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x0000006c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000006c        0xc d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000078       0x16 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                0x00000078                __do_copy_data
+ .init4         0x0000008e       0x10 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000008e                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x0000009e       0x16 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+                0x0000009e                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000b4        0x8 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init9)
+ *(.text)
+ .text          0x000000bc        0x4 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x000000bc                __vector_22
+                0x000000bc                __vector_1
+                0x000000bc                __vector_24
+                0x000000bc                __vector_12
+                0x000000bc                __bad_interrupt
+                0x000000bc                __vector_6
+                0x000000bc                __vector_3
+                0x000000bc                __vector_23
+                0x000000bc                __vector_25
+                0x000000bc                __vector_11
+                0x000000bc                __vector_13
+                0x000000bc                __vector_17
+                0x000000bc                __vector_19
+                0x000000bc                __vector_7
+                0x000000bc                __vector_5
+                0x000000bc                __vector_4
+                0x000000bc                __vector_9
+                0x000000bc                __vector_2
+                0x000000bc                __vector_21
+                0x000000bc                __vector_15
+                0x000000bc                __vector_8
+                0x000000bc                __vector_14
+                0x000000bc                __vector_10
+                0x000000bc                __vector_18
+                0x000000bc                __vector_20
+ .text          0x000000c0      0x110 Debug\obj\src\clock.o
+                0x000000c0                _ZN5ClockC2Ev
+                0x000000c0                _ZN5ClockC1Ev
+                0x000000fe                _ZN5Clock4TickEv
+                0x00000160                _ZN5Clock4TimeEv
+                0x000001aa                _ZN5Clock10getTimeOutEv
+ .text          0x000001d0        0x0 Debug\obj\src\common.o
+ .text          0x000001d0       0xf4 Debug\obj\src\gpio.o
+                0x000001d0                _ZN4GPIO8WritePinEh13GPIO_PinState
+                0x0000024a                _ZN4GPIO6DirectEh14GPIO_PinDirect
+ .text          0x000002c4        0xe Debug\obj\src\main.o
+                0x000002c4                main
+ .text          0x000002d2      0x40e Debug\obj\src\tablo.o
+                0x000002d2                _Z8delay_usj
+                0x00000346                _Z7ClkTickv
+                0x00000382                _Z7LATTickv
+                0x000003be                _ZN5TABLOC2Ev
+                0x000003be                _ZN5TABLOC1Ev
+                0x0000042a                _ZN5TABLO7SendCMDEhhhh
+                0x00000576                _ZN5TABLO9SendDigitEh
+                0x000005f0                _ZN5TABLO5ClearEv
+                0x0000062c                _ZN5TABLO6EnableE4BOOL
+ .text          0x000006e0      0x406 Debug\obj\src\tim0.o
+                0x000006e0                _Z9TIM0_InitjjPh
+                0x00000814                _ZN4TIM0C1Ev
+                0x00000814                _ZN4TIM0C2Ev
+                0x0000082e                _ZN4TIM0C1Ejj
+                0x0000082e                _ZN4TIM0C2Ejj
+                0x0000095e                _ZN4TIM011set_timeoutEPmm
+                0x000009c4                _ZN4TIM011get_timeoutEPm
+                0x00000a18                __vector_16
+ .text          0x00000ae6        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000ae6        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text          0x00000ae6        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000ae6        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000ae6        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text          0x00000ae6        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x00000ae6                . = ALIGN (0x2)
+ *(.text.*)
+ .text._ZN4GPIOC2EPVhS1_S1_
+                0x00000ae6       0x62 Debug\obj\src\tablo.o
+                0x00000ae6                _ZN4GPIOC1EPVhS1_S1_
+                0x00000ae6                _ZN4GPIOC2EPVhS1_S1_
+ .text.libgcc.mul
+                0x00000b48        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.div
+                0x00000b48       0x44 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000b48                __udivmodsi4
+ .text.libgcc   0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.div
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc   0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.prologue
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.builtins
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fmul
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fixed
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.mul
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc   0x00000b8c        0xc d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x00000b8c                __tablejump2__
+ .text.libgcc.prologue
+                0x00000b98        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000b98        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000b98        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000b98        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x00000b98                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000b98        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x00000b98                _exit
+                0x00000b98                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000b98        0x4 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000b9c                _etext = .
+
+.data           0x00800100        0x8 load address 0x00000b9c
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .data          0x00800100        0x0 Debug\obj\src\clock.o
+ .data          0x00800100        0x0 Debug\obj\src\common.o
+ .data          0x00800100        0x0 Debug\obj\src\gpio.o
+ .data          0x00800100        0x0 Debug\obj\src\main.o
+ .data          0x00800100        0x6 Debug\obj\src\tablo.o
+                0x00800100                s_tabl
+ .data          0x00800106        0x1 Debug\obj\src\tim0.o
+                0x00800106                ReloadValue0
+ .data          0x00800107        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00800107        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .data          0x00800107        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800107        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00800107        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .data          0x00800107        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ *(.data*)
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.r*)
+                0x00800108                . = ALIGN (0x2)
+ *fill*         0x00800107        0x1 
+                0x00800108                _edata = .
+                0x00800108                PROVIDE (__data_end, .)
+
+.bss            0x00800108        0xc
+                0x00800108                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800108        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .bss           0x00800108        0x0 Debug\obj\src\clock.o
+ .bss           0x00800108        0x0 Debug\obj\src\common.o
+ .bss           0x00800108        0x0 Debug\obj\src\gpio.o
+ .bss           0x00800108        0x0 Debug\obj\src\main.o
+ .bss           0x00800108        0x7 Debug\obj\src\tablo.o
+                0x00800108                GPIOB
+                0x0080010e                tablo
+ .bss           0x0080010f        0x5 Debug\obj\src\tim0.o
+                0x0080010f                sysTick
+                0x00800113                tim0
+ .bss           0x00800114        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00800114        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .bss           0x00800114        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800114        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00800114        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .bss           0x00800114        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ *(.bss*)
+ *(COMMON)
+                0x00800114                PROVIDE (__bss_end, .)
+                0x00000b9c                __data_load_start = LOADADDR (.data)
+                0x00000ba4                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800114        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x00800114                _end = .
+                [!provide]                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x11
+ *(.comment)
+ .comment       0x00000000       0x11 Debug\obj\src\clock.o
+                                 0x12 (size before relaxing)
+ .comment       0x00000011       0x12 Debug\obj\src\common.o
+ .comment       0x00000011       0x12 Debug\obj\src\gpio.o
+ .comment       0x00000011       0x12 Debug\obj\src\main.o
+ .comment       0x00000011       0x12 Debug\obj\src\tablo.o
+ .comment       0x00000011       0x12 Debug\obj\src\tim0.o
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x180
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 Debug\obj\src\clock.o
+ .debug_aranges
+                0x00000020       0x18 Debug\obj\src\common.o
+ .debug_aranges
+                0x00000038       0x20 Debug\obj\src\gpio.o
+ .debug_aranges
+                0x00000058       0x20 Debug\obj\src\main.o
+ .debug_aranges
+                0x00000078       0x28 Debug\obj\src\tablo.o
+ .debug_aranges
+                0x000000a0       0x20 Debug\obj\src\tim0.o
+ .debug_aranges
+                0x000000c0       0x20 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_aranges
+                0x000000e0       0x20 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .debug_aranges
+                0x00000100       0x20 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .debug_aranges
+                0x00000120       0x20 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_aranges
+                0x00000140       0x20 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .debug_aranges
+                0x00000160       0x20 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x1fcb
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x5f4 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_info    0x000005f4      0x3b9 Debug\obj\src\clock.o
+ .debug_info    0x000009ad       0x64 Debug\obj\src\common.o
+ .debug_info    0x00000a11      0x20e Debug\obj\src\gpio.o
+ .debug_info    0x00000c1f      0x41e Debug\obj\src\main.o
+ .debug_info    0x0000103d      0x6b2 Debug\obj\src\tablo.o
+ .debug_info    0x000016ef      0x47a Debug\obj\src\tim0.o
+ .debug_info    0x00001b69       0xbb d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_info    0x00001c24       0xbb d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .debug_info    0x00001cdf       0xbb d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .debug_info    0x00001d9a       0xbb d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_info    0x00001e55       0xbb d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .debug_info    0x00001f10       0xbb d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+
+.debug_abbrev   0x00000000      0xec6
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x5a2 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_abbrev  0x000005a2      0x160 Debug\obj\src\clock.o
+ .debug_abbrev  0x00000702       0x26 Debug\obj\src\common.o
+ .debug_abbrev  0x00000728      0x113 Debug\obj\src\gpio.o
+ .debug_abbrev  0x0000083b      0x115 Debug\obj\src\main.o
+ .debug_abbrev  0x00000950      0x2c6 Debug\obj\src\tablo.o
+ .debug_abbrev  0x00000c16      0x238 Debug\obj\src\tim0.o
+ .debug_abbrev  0x00000e4e       0x14 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_abbrev  0x00000e62       0x14 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .debug_abbrev  0x00000e76       0x14 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .debug_abbrev  0x00000e8a       0x14 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_abbrev  0x00000e9e       0x14 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .debug_abbrev  0x00000eb2       0x14 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+
+.debug_line     0x00000000      0xba1
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000       0x1a d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_line    0x0000001a       0xfd Debug\obj\src\clock.o
+ .debug_line    0x00000117       0x1a Debug\obj\src\common.o
+ .debug_line    0x00000131       0xbc Debug\obj\src\gpio.o
+ .debug_line    0x000001ed       0xbe Debug\obj\src\main.o
+ .debug_line    0x000002ab      0x339 Debug\obj\src\tablo.o
+ .debug_line    0x000005e4      0x20f Debug\obj\src\tim0.o
+ .debug_line    0x000007f3      0x122 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_line    0x00000915       0x62 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .debug_line    0x00000977       0x98 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .debug_line    0x00000a0f       0x86 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_line    0x00000a95       0x92 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .debug_line    0x00000b27       0x7a d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+
+.debug_frame    0x00000000      0x408
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x94 Debug\obj\src\clock.o
+ .debug_frame   0x00000094       0x54 Debug\obj\src\gpio.o
+ .debug_frame   0x000000e8       0x34 Debug\obj\src\main.o
+ .debug_frame   0x0000011c      0x184 Debug\obj\src\tablo.o
+ .debug_frame   0x000002a0      0x168 Debug\obj\src\tim0.o
+
+.debug_str      0x00000000      0x75b
+ *(.debug_str)
+ .debug_str     0x00000000      0x208 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_str     0x00000208      0x28c Debug\obj\src\clock.o
+                                0x2e3 (size before relaxing)
+ .debug_str     0x00000494       0x43 Debug\obj\src\common.o
+                                 0xd7 (size before relaxing)
+ .debug_str     0x000004d7       0xca Debug\obj\src\gpio.o
+                                0x233 (size before relaxing)
+ .debug_str     0x000005a1       0x12 Debug\obj\src\main.o
+                                0x3cc (size before relaxing)
+ .debug_str     0x000005b3      0x10d Debug\obj\src\tablo.o
+                                0x3dc (size before relaxing)
+ .debug_str     0x000006c0       0x9b Debug\obj\src\tim0.o
+                                0x324 (size before relaxing)
+
+.debug_loc      0x00000000      0x7f6
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x120 Debug\obj\src\clock.o
+ .debug_loc     0x00000120       0x90 Debug\obj\src\gpio.o
+ .debug_loc     0x000001b0       0x3b Debug\obj\src\main.o
+ .debug_loc     0x000001eb      0x309 Debug\obj\src\tablo.o
+ .debug_loc     0x000004f4      0x302 Debug\obj\src\tim0.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000       0x18
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x18 Debug\obj\src\tablo.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(Debug\bin\Clock.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+GPIOB                                             Debug\obj\src\tablo.o
+ReloadValue0                                      Debug\obj\src\tim0.o
+_Z7ClkTickv                                       Debug\obj\src\tablo.o
+_Z7LATTickv                                       Debug\obj\src\tablo.o
+_Z8delay_usj                                      Debug\obj\src\tablo.o
+_Z9TIM0_InitjjPh                                  Debug\obj\src\tim0.o
+_ZN4GPIO6DirectEh14GPIO_PinDirect                 Debug\obj\src\gpio.o
+                                                  Debug\obj\src\tablo.o
+_ZN4GPIO8WritePinEh13GPIO_PinState                Debug\obj\src\gpio.o
+                                                  Debug\obj\src\tablo.o
+_ZN4GPIOC1EPVhS1_S1_                              Debug\obj\src\tablo.o
+_ZN4GPIOC2EPVhS1_S1_                              Debug\obj\src\tablo.o
+_ZN4TIM011get_timeoutEPm                          Debug\obj\src\tim0.o
+                                                  Debug\obj\src\clock.o
+_ZN4TIM011set_timeoutEPmm                         Debug\obj\src\tim0.o
+                                                  Debug\obj\src\clock.o
+_ZN4TIM0C1Ejj                                     Debug\obj\src\tim0.o
+_ZN4TIM0C1Ev                                      Debug\obj\src\tim0.o
+_ZN4TIM0C2Ejj                                     Debug\obj\src\tim0.o
+_ZN4TIM0C2Ev                                      Debug\obj\src\tim0.o
+_ZN5Clock10getTimeOutEv                           Debug\obj\src\clock.o
+_ZN5Clock4TickEv                                  Debug\obj\src\clock.o
+_ZN5Clock4TimeEv                                  Debug\obj\src\clock.o
+_ZN5ClockC1Ev                                     Debug\obj\src\clock.o
+_ZN5ClockC2Ev                                     Debug\obj\src\clock.o
+_ZN5TABLO5ClearEv                                 Debug\obj\src\tablo.o
+_ZN5TABLO6EnableE4BOOL                            Debug\obj\src\tablo.o
+_ZN5TABLO7SendCMDEhhhh                            Debug\obj\src\tablo.o
+_ZN5TABLO9SendDigitEh                             Debug\obj\src\tablo.o
+_ZN5TABLOC1Ev                                     Debug\obj\src\tablo.o
+_ZN5TABLOC2Ev                                     Debug\obj\src\tablo.o
+__FUSE_REGION_LENGTH__                            d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__bad_interrupt                                   d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__bss_end                                         d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+__bss_start                                       d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+__ctors_end                                       d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+__ctors_start                                     d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+__data_end                                        d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+__data_load_start                                 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+__data_start                                      d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+__do_clear_bss                                    d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                                                  Debug\obj\src\tim0.o
+                                                  Debug\obj\src\tablo.o
+__do_copy_data                                    d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                                                  Debug\obj\src\tim0.o
+                                                  Debug\obj\src\tablo.o
+__do_global_ctors                                 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+                                                  Debug\obj\src\tim0.o
+                                                  Debug\obj\src\tablo.o
+__heap_end                                        d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__init                                            d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__stack                                           d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__tablejump2__                                    d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                                                  d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+__udivmodsi4                                      d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+                                                  Debug\obj\src\tim0.o
+                                                  Debug\obj\src\tablo.o
+__vector_1                                        d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_10                                       d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_11                                       d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_12                                       d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_13                                       d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_14                                       d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_15                                       d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_16                                       Debug\obj\src\tim0.o
+                                                  d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_17                                       d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_18                                       d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_19                                       d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_2                                        d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_20                                       d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_21                                       d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_22                                       d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_23                                       d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_24                                       d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_25                                       d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_3                                        d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_4                                        d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_5                                        d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_6                                        d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_7                                        d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_8                                        d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_9                                        d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_default                                  d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vectors                                         d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+_exit                                             d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+exit                                              d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                                                  d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+main                                              Debug\obj\src\main.o
+                                                  d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+s_tabl                                            Debug\obj\src\tablo.o
+sysTick                                           Debug\obj\src\tim0.o
+tablo                                             Debug\obj\src\tablo.o
+tim0                                              Debug\obj\src\tim0.o
+                                                  Debug\obj\src\clock.o

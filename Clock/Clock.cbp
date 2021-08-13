@@ -7,23 +7,25 @@
 		<Option compiler="avr-gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/Clock.elf" prefix_auto="1" extension_auto="0" />
+				<Option output="Debug/bin/Clock.elf" prefix_auto="1" extension_auto="0" />
 				<Option working_dir="" />
-				<Option object_output="obj/Debug/" />
+				<Option object_output="Debug/obj/" />
 				<Option type="5" />
 				<Option compiler="avr-gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="inc" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/Clock.elf" prefix_auto="1" extension_auto="0" />
+				<Option output="Release/bin/Clock.elf" prefix_auto="1" extension_auto="0" />
 				<Option working_dir="" />
-				<Option object_output="obj/Release/" />
+				<Option object_output="Release/obj/" />
 				<Option type="5" />
 				<Option compiler="avr-gcc" />
 				<Compiler>
 					<Add option="-Os" />
+					<Add directory="inc" />
 				</Compiler>
 			</Target>
 			<Environment>
@@ -32,26 +34,35 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add option="-std=c++20" />
+			<Add option="-std=c++17" />
 			<Add option="-mmcu=atmega328p" />
 			<Add option="-DF_CPU=7372800UL" />
 			<Add option="-D__AVR_ATmega328P__" />
+			<Add option="-D__PROG_TYPES_COMPAT__" />
 		</Compiler>
 		<Linker>
 			<Add option="-mmcu=atmega328p" />
+			<Add option="-Wl,-Map=$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).map,--cref" />
 		</Linker>
 		<ExtraCommands>
+			<Add after="avr-size --mcu=atmega328p --format=avr $(TARGET_OUTPUT_FILE)" />
 			<Add after="avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex $(TARGET_OUTPUT_FILE) $(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).hex" />
 			<Add after="avr-objcopy --no-change-warnings -j .eeprom --change-section-lma .eeprom=0 -O ihex $(TARGET_OUTPUT_FILE) $(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).eep" />
-			<Add after="avr-size --mcu=atmega328p --format=avr $(TARGET_OUTPUT_FILE)" />
 		</ExtraCommands>
-		<Unit filename="common.c">
+		<Unit filename="inc/clock.h" />
+		<Unit filename="inc/common.h" />
+		<Unit filename="inc/gpio.h" />
+		<Unit filename="inc/main.h" />
+		<Unit filename="inc/tablo.h" />
+		<Unit filename="inc/tim0.h" />
+		<Unit filename="src/clock.cpp" />
+		<Unit filename="src/common.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="common.h" />
-		<Unit filename="main.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
+		<Unit filename="src/gpio.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/tablo.cpp" />
+		<Unit filename="src/tim0.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

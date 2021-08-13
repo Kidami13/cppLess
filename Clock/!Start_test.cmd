@@ -54,7 +54,8 @@ echo Проверка подключения...
 rem 
 %AVRDUDECMD% -C %CONF_FILE% -c %PROGRMER% -P %port% -p %DEVICE% -B15
 rem %AVRDUDECMD% -c ft232r -P ft0 -p %DEVICE% -B38400
-rem pause
+rem 
+pause
 IF ERRORLEVEL 1	(
 		GOTO WRONG_DEVICE
 ) else (
@@ -83,11 +84,17 @@ cls
 rem robocopy "%DIRFLASHFILE%" "%DIRPROG%" %FLASHFILE%.hex
 rem pause
 
-rem %AVRDUDECMD% -C %CONF_FILE% -c %PROGRMER% -P %port% -p %DEVICE% -U hfuse:w:0xDF:m
-rem %AVRDUDECMD% -C %CONF_FILE% -c %PROGRMER% -P %port% -p %DEVICE% -U lfuse:w:0xEF:m
-rem %AVRDUDECMD% -C %CONF_FILE% -c %PROGRMER% -P %port% -p %DEVICE% -U efuse:w:0xFE:m
-%AVRDUDECMD% -C %CONF_FILE% -c %PROGRMER% -P %port% -p %DEVICE% -B1 -U flash:w:"%DIRFLASHFILE%\%FLASHFILE%.hex":i
+rem %AVRDUDECMD% -C %CONF_FILE% -c %PROGRMER% -P %port% -p %DEVICE% -B15 -U hfuse:w:0xDF:m -U lfuse:w:0xEF:m -U efuse:w:0xFE:m
+%AVRDUDECMD% -C %CONF_FILE% -c %PROGRMER% -P %port% -p %DEVICE% -B15 -U flash:w:"%DIRFLASHFILE%\%FLASHFILE%.hex":i
+rem  -b57600
+rem %AVRDUDECMD% -c ft232r -P ft0 -p %DEVICE% -U hfuse:w:0xDF:m -B57600
+rem %AVRDUDECMD% -c ft232r -P ft0 -p %DEVICE% -U lfuse:w:0x7F:m -B57600
+rem %AVRDUDECMD% -c ft232r -P ft0 -p %DEVICE% -U efuse:w:0xFE:m -B57600
 rem cls
+rem %AVRDUDECMD% -c ft232r -P ft0 -p %DEVICE% -U flash:w:"%FLASHFILE%.hex":i -B460800
+rem %AVRDUDECMD% -c STK500v2 -P COM%port% -p %DEVICE3% -U hfuse:w:0xDF:m -U lfuse:w:0xEF:m -U efuse:w:0xFE:m -B15
+rem %AVRDUDECMD% -c STK500v2 -P COM%port% -p %DEVICE3% -U flash:w:"%FLASHFILE%.hex":i -B1
+rem %AVRDUDECMD% -c STK500v2 -P COM%port% -p %DEVICE3% -V -U lock:w:0xC0:m -B15
 
 IF ERRORLEVEL 1 (
 	GOTO ERR_PROG

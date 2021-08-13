@@ -1,17 +1,8 @@
-#ifndef COMMON_H
-#define COMMON_H
+#ifndef GPIO_H
+#define GPIO_H
 
 #include <avr/io.h>
 #include "stdint.h"
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-typedef enum {
-	FALSE=0,
-	TRUE=1
-} BOOL;
 
 typedef enum
 {
@@ -34,29 +25,36 @@ typedef enum
 #define GPIO_PIN_6                 ((uint8_t)0x0040)  /* Pin 6 selected    */
 #define GPIO_PIN_7                 ((uint8_t)0x0080)  /* Pin 7 selected    */
 
-
 typedef struct
 {
+    volatile uint8_t *PINR;
     volatile uint8_t *DDRR;
     volatile uint8_t *PORTR;
-    volatile uint8_t *PINR;
 } GPIO_TypeDef;
 
-extern GPIO_TypeDef GPIOB;
-extern GPIO_TypeDef GPIOC;
-extern GPIO_TypeDef GPIOD;
 
 
-void HAL_GPIO_WritePin(GPIO_TypeDef *GPIOx, uint8_t GPIO_Pin, GPIO_PinState PinState);
-void HAL_GPIO_Direct(GPIO_TypeDef *GPIOx, uint8_t GPIO_Pin, GPIO_PinDirect PinDir);
+class GPIO
+{
+    public:
+        GPIO(volatile uint8_t * pin, volatile uint8_t * ddr, volatile uint8_t * port)
+        {
+            PINR = pin;
+            DDRR = ddr;
+            PORTR = port;
+        }
 
-void GPIO_Init();
+        void WritePin(uint8_t GPIO_Pin, GPIO_PinState PinState);
+        void Direct(uint8_t GPIO_Pin, GPIO_PinDirect PinDir);
 
-void f(GPIO_TypeDef *GPIOx);
+    protected:
+
+    private:
+            volatile uint8_t *PINR;
+            volatile uint8_t *DDRR;
+            volatile uint8_t *PORTR;
+};
 
 
-#ifdef __cplusplus
-}
-#endif
 
-#endif // COMMON_H
+#endif // GPIO_H

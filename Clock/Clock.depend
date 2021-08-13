@@ -1,13 +1,67 @@
 # depslib dependency file v1.0
-1627470490 source:d:\project\ulya\cppless\clock\common.c
+1628688918 source:d:\project\ulyana\cppless\cppless\clock\src\common.c
 	"common.h"
-	<avr/io.h>
 
-1627471048 d:\project\ulya\cppless\clock\common.h
+1628688918 d:\project\ulyana\cppless\cppless\clock\inc\common.h
+	"stdint.h"
+	<avr/io.h>
+	<avr/pgmspace.h>
+
+1628605991 source:d:\project\ulyana\cppless\cppless\clock\src\main.cpp
+	<avr/io.h>
+	<util/atomic.h>
+	"common.h"
+	"gpio.h"
+	"tim0.h"
+	"tablo.h"
+	"clock.h"
+
+1628521931 source:d:\project\ulyana\cppless\cppless\clock\src\gpio.cpp
+	"gpio.h"
+
+1628521729 d:\project\ulyana\cppless\cppless\clock\inc\gpio.h
 	<avr/io.h>
 	"stdint.h"
 
-1627470799 source:d:\project\ulya\cppless\clock\main.cpp
-	<avr/io.h>
+1628688986 source:d:\project\ulyana\cppless\cppless\clock\src\tablo.cpp
+	"tablo.h"
+	"gpio.h"
+	"string.h"
+	"stdio.h"
+	<avr/pgmspace.h>
+
+1628686838 d:\project\ulyana\cppless\cppless\clock\inc\tablo.h
 	"common.h"
+	<avr/io.h>
+	<avr/pgmspace.h>
+	"stdint.h"
+
+1628521560 source:d:\project\ulyana\cppless\cppless\clock\src\tim0.cpp
+	"tim0.h"
+	"common.h"
+	"clock.h"
+	<avr/io.h>
+	<avr/interrupt.h>
+
+1628520494 d:\project\ulyana\cppless\cppless\clock\inc\tim0.h
+	"stdint.h"
+	"common.h"
+
+1628603787 source:d:\project\ulyana\cppless\cppless\clock\src\clock.cpp
+	"clock.h"
+	"tablo.h"
+	"tim0.h"
+
+1628520246 d:\project\ulyana\cppless\cppless\clock\inc\clock.h
+	<stdint.h>
+	"common.h"
+
+1628689082 source:d:\project\ulyana\cppless\cppless\clock\src\flashmem.cpp
+	"flashmem.h"
+	"stdint.h"
+
+1628689243 d:\project\ulyana\cppless\cppless\clock\inc\flashmem.h
+	"string.h"
+	"stdio.h"
+	<avr/pgmspace.h>
 

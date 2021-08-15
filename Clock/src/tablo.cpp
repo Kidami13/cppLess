@@ -12,10 +12,6 @@ GPIO GPIOB(&PINB, &DDRB, &PORTB);
 //
 TABLO tablo;
 
-//__INFLASH
-uint8_t s_tabl[]{
-//    0         1           2
-    0b10000001, 0b00000010, 0b00000100, 0b00000100, 0b00000100, 0b00000100};
 
 void delay_us(uint16_t us)
 {
@@ -47,8 +43,9 @@ TABLO::TABLO()
     GPIOB.Direct(EN_Pin|DI_Pin|CLK_Pin|LAT_Pin, GPIO_PIN_OUT);
 
     Enable(TRUE);
-    SendCMD(30, 0, 0, 0);
-    Clear();
+    SendCMD(10, 0, 0, 0);
+    //Clear();
+    send(89,23,67);
 }
 
 void TABLO::SendCMD(uint8_t Bright, uint8_t sv, uint8_t nu, uint8_t slp)
@@ -99,7 +96,25 @@ void TABLO::SendDigit(uint8_t digit)
 
 void TABLO::Clear()
 {
-    for(uint8_t i = 0; i < 6; i++) SendDigit(2);
+    for(uint8_t i = 0; i < 6; i++) SendDigit(0b00000000);
+    LATTick();
+
+}
+//__INFLASH
+uint8_t s_tabl[]{
+//    0         1           2               3            4           5          6          7          8          9
+    0b01110111, 0b01000001, 0b01101110, 0b01101011, 0b01011001, 0b00111011, 0b00111111, 0b01100001, 0b01111111, 0b01111011};
+
+
+void TABLO::send(uint8_t d1,uint8_t d2,uint8_t d3)
+{
+
+    SendDigit(s_tabl[d1/10]);
+    SendDigit(s_tabl[d1%10]);
+    SendDigit(s_tabl[d2/10]);
+    SendDigit(s_tabl[d2%10]);
+    SendDigit(s_tabl[d3/10]);
+    SendDigit(s_tabl[d3%10]);
     LATTick();
 
 }

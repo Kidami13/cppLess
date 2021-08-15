@@ -23,7 +23,7 @@ class TABLO
         void Enable(BOOL en);
         void SendCMD(uint8_t Bright, uint8_t sv, uint8_t nu, uint8_t slp);
 //        virtual ~TABLO();
-
+        void send(uint8_t d1,uint8_t d2,uint8_t d3);
     protected:
 
     private:

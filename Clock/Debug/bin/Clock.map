@@ -40,11 +40,11 @@ LOAD Debug\obj\src\main.o
 LOAD Debug\obj\src\tablo.o
 LOAD Debug\obj\src\tim0.o
 LOAD d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a
-LOAD d:\Program Files\GCC\AVRGCC\avr\lib\libm.a
+LOAD d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a
 START GROUP
 LOAD d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a
-LOAD d:\Program Files\GCC\AVRGCC\avr\lib\libm.a
-LOAD d:\Program Files\GCC\AVRGCC\avr\lib\libc.a
+LOAD d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a
+LOAD d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a
 LOAD d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libatmega328p.a
 END GROUP
                 0x00020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
@@ -146,7 +146,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0xb9c
+.text           0x00000000      0xce4
  *(.vectors)
  .vectors       0x00000000       0x68 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
                 0x00000000                __vector_default
@@ -246,122 +246,123 @@ END GROUP
                 0x0000024a                _ZN4GPIO6DirectEh14GPIO_PinDirect
  .text          0x000002c4        0xe Debug\obj\src\main.o
                 0x000002c4                main
- .text          0x000002d2      0x40e Debug\obj\src\tablo.o
+ .text          0x000002d2      0x556 Debug\obj\src\tablo.o
                 0x000002d2                _Z8delay_usj
                 0x00000346                _Z7ClkTickv
                 0x00000382                _Z7LATTickv
                 0x000003be                _ZN5TABLOC2Ev
                 0x000003be                _ZN5TABLOC1Ev
-                0x0000042a                _ZN5TABLO7SendCMDEhhhh
-                0x00000576                _ZN5TABLO9SendDigitEh
-                0x000005f0                _ZN5TABLO5ClearEv
-                0x0000062c                _ZN5TABLO6EnableE4BOOL
- .text          0x000006e0      0x406 Debug\obj\src\tim0.o
-                0x000006e0                _Z9TIM0_InitjjPh
-                0x00000814                _ZN4TIM0C1Ev
-                0x00000814                _ZN4TIM0C2Ev
-                0x0000082e                _ZN4TIM0C1Ejj
-                0x0000082e                _ZN4TIM0C2Ejj
-                0x0000095e                _ZN4TIM011set_timeoutEPmm
-                0x000009c4                _ZN4TIM011get_timeoutEPm
-                0x00000a18                __vector_16
- .text          0x00000ae6        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
- .text          0x00000ae6        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
- .text          0x00000ae6        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
- .text          0x00000ae6        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
- .text          0x00000ae6        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
- .text          0x00000ae6        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
-                0x00000ae6                . = ALIGN (0x2)
+                0x00000430                _ZN5TABLO7SendCMDEhhhh
+                0x0000057c                _ZN5TABLO9SendDigitEh
+                0x000005f6                _ZN5TABLO5ClearEv
+                0x00000632                _ZN5TABLO4sendEhhh
+                0x00000774                _ZN5TABLO6EnableE4BOOL
+ .text          0x00000828      0x406 Debug\obj\src\tim0.o
+                0x00000828                _Z9TIM0_InitjjPh
+                0x0000095c                _ZN4TIM0C1Ev
+                0x0000095c                _ZN4TIM0C2Ev
+                0x00000976                _ZN4TIM0C1Ejj
+                0x00000976                _ZN4TIM0C2Ejj
+                0x00000aa6                _ZN4TIM011set_timeoutEPmm
+                0x00000b0c                _ZN4TIM011get_timeoutEPm
+                0x00000b60                __vector_16
+ .text          0x00000c2e        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000c2e        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text          0x00000c2e        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000c2e        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000c2e        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text          0x00000c2e        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x00000c2e                . = ALIGN (0x2)
  *(.text.*)
  .text._ZN4GPIOC2EPVhS1_S1_
-                0x00000ae6       0x62 Debug\obj\src\tablo.o
-                0x00000ae6                _ZN4GPIOC1EPVhS1_S1_
-                0x00000ae6                _ZN4GPIOC2EPVhS1_S1_
+                0x00000c2e       0x62 Debug\obj\src\tablo.o
+                0x00000c2e                _ZN4GPIOC1EPVhS1_S1_
+                0x00000c2e                _ZN4GPIOC2EPVhS1_S1_
  .text.libgcc.mul
-                0x00000b48        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000c90        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc.div
-                0x00000b48       0x44 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
-                0x00000b48                __udivmodsi4
- .text.libgcc   0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000c90       0x44 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000c90                __udivmodsi4
+ .text.libgcc   0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc.prologue
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc.builtins
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc.fmul
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc.fixed
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc.mul
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.div
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.prologue
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.builtins
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.fmul
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.fixed
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.mul
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.div
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.prologue
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.builtins
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.fmul
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.fixed
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.mul
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.div
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.prologue
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.builtins
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.fmul
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.fixed
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.mul
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
  .text.libgcc.div
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
- .text.libgcc   0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc   0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
  .text.libgcc.prologue
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
  .text.libgcc.builtins
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
  .text.libgcc.fmul
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
  .text.libgcc.fixed
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
  .text.libgcc.mul
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
  .text.libgcc.div
-                0x00000b8c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
- .text.libgcc   0x00000b8c        0xc d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
-                0x00000b8c                __tablejump2__
+                0x00000cd4        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc   0x00000cd4        0xc d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x00000cd4                __tablejump2__
  .text.libgcc.prologue
-                0x00000b98        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x00000ce0        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
  .text.libgcc.builtins
-                0x00000b98        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x00000ce0        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
  .text.libgcc.fmul
-                0x00000b98        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x00000ce0        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
  .text.libgcc.fixed
-                0x00000b98        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
-                0x00000b98                . = ALIGN (0x2)
+                0x00000ce0        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x00000ce0                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000b98        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
-                0x00000b98                _exit
-                0x00000b98                exit
+ .fini9         0x00000ce0        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x00000ce0                _exit
+                0x00000ce0                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -380,11 +381,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000b98        0x4 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000ce0        0x4 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000b9c                _etext = .
+                0x00000ce4                _etext = .
 
-.data           0x00800100        0x8 load address 0x00000b9c
+.data           0x00800100        0xc load address 0x00000ce4
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800100        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
@@ -392,57 +393,57 @@ END GROUP
  .data          0x00800100        0x0 Debug\obj\src\common.o
  .data          0x00800100        0x0 Debug\obj\src\gpio.o
  .data          0x00800100        0x0 Debug\obj\src\main.o
- .data          0x00800100        0x6 Debug\obj\src\tablo.o
+ .data          0x00800100        0xa Debug\obj\src\tablo.o
                 0x00800100                s_tabl
- .data          0x00800106        0x1 Debug\obj\src\tim0.o
-                0x00800106                ReloadValue0
- .data          0x00800107        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
- .data          0x00800107        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
- .data          0x00800107        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
- .data          0x00800107        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
- .data          0x00800107        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
- .data          0x00800107        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .data          0x0080010a        0x1 Debug\obj\src\tim0.o
+                0x0080010a                ReloadValue0
+ .data          0x0080010b        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x0080010b        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .data          0x0080010b        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x0080010b        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x0080010b        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .data          0x0080010b        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
  *(.data*)
  *(.gnu.linkonce.d*)
  *(.rodata)
  *(.rodata*)
  *(.gnu.linkonce.r*)
-                0x00800108                . = ALIGN (0x2)
- *fill*         0x00800107        0x1 
-                0x00800108                _edata = .
-                0x00800108                PROVIDE (__data_end, .)
+                0x0080010c                . = ALIGN (0x2)
+ *fill*         0x0080010b        0x1 
+                0x0080010c                _edata = .
+                0x0080010c                PROVIDE (__data_end, .)
 
-.bss            0x00800108        0xc
-                0x00800108                PROVIDE (__bss_start, .)
+.bss            0x0080010c        0xc
+                0x0080010c                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x00800108        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
- .bss           0x00800108        0x0 Debug\obj\src\clock.o
- .bss           0x00800108        0x0 Debug\obj\src\common.o
- .bss           0x00800108        0x0 Debug\obj\src\gpio.o
- .bss           0x00800108        0x0 Debug\obj\src\main.o
- .bss           0x00800108        0x7 Debug\obj\src\tablo.o
-                0x00800108                GPIOB
-                0x0080010e                tablo
- .bss           0x0080010f        0x5 Debug\obj\src\tim0.o
-                0x0080010f                sysTick
-                0x00800113                tim0
- .bss           0x00800114        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
- .bss           0x00800114        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
- .bss           0x00800114        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
- .bss           0x00800114        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
- .bss           0x00800114        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
- .bss           0x00800114        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .bss           0x0080010c        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .bss           0x0080010c        0x0 Debug\obj\src\clock.o
+ .bss           0x0080010c        0x0 Debug\obj\src\common.o
+ .bss           0x0080010c        0x0 Debug\obj\src\gpio.o
+ .bss           0x0080010c        0x0 Debug\obj\src\main.o
+ .bss           0x0080010c        0x7 Debug\obj\src\tablo.o
+                0x0080010c                GPIOB
+                0x00800112                tablo
+ .bss           0x00800113        0x5 Debug\obj\src\tim0.o
+                0x00800113                sysTick
+                0x00800117                tim0
+ .bss           0x00800118        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00800118        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .bss           0x00800118        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800118        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00800118        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .bss           0x00800118        0x0 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
  *(.bss*)
  *(COMMON)
-                0x00800114                PROVIDE (__bss_end, .)
-                0x00000b9c                __data_load_start = LOADADDR (.data)
-                0x00000ba4                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00800118                PROVIDE (__bss_end, .)
+                0x00000ce4                __data_load_start = LOADADDR (.data)
+                0x00000cf0                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800114        0x0
+.noinit         0x00800118        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800114                _end = .
+                0x00800118                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
@@ -542,21 +543,21 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x1fcb
+.debug_info     0x00000000     0x20a1
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_info    0x000005f4      0x3b9 Debug\obj\src\clock.o
- .debug_info    0x000009ad       0x64 Debug\obj\src\common.o
- .debug_info    0x00000a11      0x20e Debug\obj\src\gpio.o
- .debug_info    0x00000c1f      0x41e Debug\obj\src\main.o
- .debug_info    0x0000103d      0x6b2 Debug\obj\src\tablo.o
- .debug_info    0x000016ef      0x47a Debug\obj\src\tim0.o
- .debug_info    0x00001b69       0xbb d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
- .debug_info    0x00001c24       0xbb d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
- .debug_info    0x00001cdf       0xbb d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
- .debug_info    0x00001d9a       0xbb d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
- .debug_info    0x00001e55       0xbb d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
- .debug_info    0x00001f10       0xbb d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .debug_info    0x000005f4      0x3e4 Debug\obj\src\clock.o
+ .debug_info    0x000009d8       0x64 Debug\obj\src\common.o
+ .debug_info    0x00000a3c      0x20e Debug\obj\src\gpio.o
+ .debug_info    0x00000c4a      0x449 Debug\obj\src\main.o
+ .debug_info    0x00001093      0x732 Debug\obj\src\tablo.o
+ .debug_info    0x000017c5      0x47a Debug\obj\src\tim0.o
+ .debug_info    0x00001c3f       0xbb d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_info    0x00001cfa       0xbb d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .debug_info    0x00001db5       0xbb d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .debug_info    0x00001e70       0xbb d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_info    0x00001f2b       0xbb d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .debug_info    0x00001fe6       0xbb d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
 
 .debug_abbrev   0x00000000      0xec6
  *(.debug_abbrev)
@@ -574,53 +575,53 @@ END GROUP
  .debug_abbrev  0x00000e9e       0x14 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
  .debug_abbrev  0x00000eb2       0x14 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
 
-.debug_line     0x00000000      0xba1
+.debug_line     0x00000000      0xbd7
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000       0x1a d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
  .debug_line    0x0000001a       0xfd Debug\obj\src\clock.o
  .debug_line    0x00000117       0x1a Debug\obj\src\common.o
  .debug_line    0x00000131       0xbc Debug\obj\src\gpio.o
  .debug_line    0x000001ed       0xbe Debug\obj\src\main.o
- .debug_line    0x000002ab      0x339 Debug\obj\src\tablo.o
- .debug_line    0x000005e4      0x20f Debug\obj\src\tim0.o
- .debug_line    0x000007f3      0x122 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
- .debug_line    0x00000915       0x62 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
- .debug_line    0x00000977       0x98 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
- .debug_line    0x00000a0f       0x86 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
- .debug_line    0x00000a95       0x92 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
- .debug_line    0x00000b27       0x7a d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .debug_line    0x000002ab      0x36f Debug\obj\src\tablo.o
+ .debug_line    0x0000061a      0x20f Debug\obj\src\tim0.o
+ .debug_line    0x00000829      0x122 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_line    0x0000094b       0x62 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .debug_line    0x000009ad       0x98 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .debug_line    0x00000a45       0x86 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_line    0x00000acb       0x92 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .debug_line    0x00000b5d       0x7a d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
 
-.debug_frame    0x00000000      0x408
+.debug_frame    0x00000000      0x428
  *(.debug_frame)
  .debug_frame   0x00000000       0x94 Debug\obj\src\clock.o
  .debug_frame   0x00000094       0x54 Debug\obj\src\gpio.o
  .debug_frame   0x000000e8       0x34 Debug\obj\src\main.o
- .debug_frame   0x0000011c      0x184 Debug\obj\src\tablo.o
- .debug_frame   0x000002a0      0x168 Debug\obj\src\tim0.o
+ .debug_frame   0x0000011c      0x1a4 Debug\obj\src\tablo.o
+ .debug_frame   0x000002c0      0x168 Debug\obj\src\tim0.o
 
-.debug_str      0x00000000      0x75b
+.debug_str      0x00000000      0x81b
  *(.debug_str)
  .debug_str     0x00000000      0x208 d:/program files/gcc/avrgcc/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_str     0x00000208      0x28c Debug\obj\src\clock.o
-                                0x2e3 (size before relaxing)
- .debug_str     0x00000494       0x43 Debug\obj\src\common.o
+ .debug_str     0x00000208      0x2a5 Debug\obj\src\clock.o
+                                0x2fc (size before relaxing)
+ .debug_str     0x000004ad       0x6b Debug\obj\src\common.o
                                  0xd7 (size before relaxing)
- .debug_str     0x000004d7       0xca Debug\obj\src\gpio.o
+ .debug_str     0x00000518      0x149 Debug\obj\src\gpio.o
                                 0x233 (size before relaxing)
- .debug_str     0x000005a1       0x12 Debug\obj\src\main.o
-                                0x3cc (size before relaxing)
- .debug_str     0x000005b3      0x10d Debug\obj\src\tablo.o
-                                0x3dc (size before relaxing)
- .debug_str     0x000006c0       0x9b Debug\obj\src\tim0.o
+ .debug_str     0x00000661       0x12 Debug\obj\src\main.o
+                                0x3e5 (size before relaxing)
+ .debug_str     0x00000673      0x10d Debug\obj\src\tablo.o
+                                0x3f5 (size before relaxing)
+ .debug_str     0x00000780       0x9b Debug\obj\src\tim0.o
                                 0x324 (size before relaxing)
 
-.debug_loc      0x00000000      0x7f6
+.debug_loc      0x00000000      0x83e
  *(.debug_loc)
  .debug_loc     0x00000000      0x120 Debug\obj\src\clock.o
  .debug_loc     0x00000120       0x90 Debug\obj\src\gpio.o
  .debug_loc     0x000001b0       0x3b Debug\obj\src\main.o
- .debug_loc     0x000001eb      0x309 Debug\obj\src\tablo.o
- .debug_loc     0x000004f4      0x302 Debug\obj\src\tim0.o
+ .debug_loc     0x000001eb      0x351 Debug\obj\src\tablo.o
+ .debug_loc     0x0000053c      0x302 Debug\obj\src\tim0.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -677,6 +678,7 @@ _ZN5Clock4TickEv                                  Debug\obj\src\clock.o
 _ZN5Clock4TimeEv                                  Debug\obj\src\clock.o
 _ZN5ClockC1Ev                                     Debug\obj\src\clock.o
 _ZN5ClockC2Ev                                     Debug\obj\src\clock.o
+_ZN5TABLO4sendEhhh                                Debug\obj\src\tablo.o
 _ZN5TABLO5ClearEv                                 Debug\obj\src\tablo.o
 _ZN5TABLO6EnableE4BOOL                            Debug\obj\src\tablo.o
 _ZN5TABLO7SendCMDEhhhh                            Debug\obj\src\tablo.o

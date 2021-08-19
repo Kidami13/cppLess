@@ -9,28 +9,23 @@
 #include "tim0.h"
 #include "tablo.h"
 #include "clock.h"
+#include "uart.h"
 
 extern GPIO GPIOB;
+extern UART uart0;
 
 
 int main(void)
 {
     cli();
-//    TIM0_Init(1000,64,&ReloadValue0);
 
     sei();
 
-
-
-    // Insert code
-
     while(1)
     {
-//        clock.Tick();
-//        clock.Time();
+        uart0.sendByte();
 
-    }
-    ;
+    };
 
     return 0;
 }

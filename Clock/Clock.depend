@@ -1,13 +1,13 @@
 # depslib dependency file v1.0
-1628688918 source:d:\project\ulyana\cppless\cppless\clock\src\common.c
+1629367429 source:d:\project\ulyana\cppless\cppless\clock\src\common.c
 	"common.h"
 
-1628688918 d:\project\ulyana\cppless\cppless\clock\inc\common.h
+1629367429 d:\project\ulyana\cppless\cppless\clock\inc\common.h
 	"stdint.h"
 	<avr/io.h>
 	<avr/pgmspace.h>
 
-1628605991 source:d:\project\ulyana\cppless\cppless\clock\src\main.cpp
+1629385400 source:d:\project\ulyana\cppless\cppless\clock\src\main.cpp
 	<avr/io.h>
 	<util/atomic.h>
 	"common.h"
@@ -15,44 +15,45 @@
 	"tim0.h"
 	"tablo.h"
 	"clock.h"
+	"uart.h"
 
-1628521931 source:d:\project\ulyana\cppless\cppless\clock\src\gpio.cpp
+1629367429 source:d:\project\ulyana\cppless\cppless\clock\src\gpio.cpp
 	"gpio.h"
 
-1628521729 d:\project\ulyana\cppless\cppless\clock\inc\gpio.h
+1629367429 d:\project\ulyana\cppless\cppless\clock\inc\gpio.h
 	<avr/io.h>
 	"stdint.h"
 
-1628688986 source:d:\project\ulyana\cppless\cppless\clock\src\tablo.cpp
+1629367429 source:d:\project\ulyana\cppless\cppless\clock\src\tablo.cpp
 	"tablo.h"
 	"gpio.h"
 	"string.h"
 	"stdio.h"
 	<avr/pgmspace.h>
 
-1628686838 d:\project\ulyana\cppless\cppless\clock\inc\tablo.h
+1629367429 d:\project\ulyana\cppless\cppless\clock\inc\tablo.h
 	"common.h"
 	<avr/io.h>
 	<avr/pgmspace.h>
 	"stdint.h"
 
-1628521560 source:d:\project\ulyana\cppless\cppless\clock\src\tim0.cpp
+1629367429 source:d:\project\ulyana\cppless\cppless\clock\src\tim0.cpp
 	"tim0.h"
 	"common.h"
 	"clock.h"
 	<avr/io.h>
 	<avr/interrupt.h>
 
-1628520494 d:\project\ulyana\cppless\cppless\clock\inc\tim0.h
+1629367429 d:\project\ulyana\cppless\cppless\clock\inc\tim0.h
 	"stdint.h"
 	"common.h"
 
-1628603787 source:d:\project\ulyana\cppless\cppless\clock\src\clock.cpp
+1629367429 source:d:\project\ulyana\cppless\cppless\clock\src\clock.cpp
 	"clock.h"
 	"tablo.h"
 	"tim0.h"
 
-1628520246 d:\project\ulyana\cppless\cppless\clock\inc\clock.h
+1629367429 d:\project\ulyana\cppless\cppless\clock\inc\clock.h
 	<stdint.h>
 	"common.h"
 
@@ -121,4 +122,16 @@
 	"string.h"
 	"stdio.h"
 	<avr/pgmspace.h>
+
+1629385312 source:d:\project\ulyana\cppless\cppless\clock\src\uart.cpp
+	"uart.h"
+	<avr/io.h>
+	<avr/interrupt.h>
+	<avr/pgmspace.h>
+	<stdio.h>
+	<string.h>
+
+1629384901 d:\project\ulyana\cppless\cppless\clock\inc\uart.h
+	"stdint.h"
+	"common.h"
 

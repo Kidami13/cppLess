@@ -55,7 +55,7 @@ UART::UART(uint32_t  u32Freq)
     pdata8bits = pRxBuffPtr;
     RxXferCount = RxXferSize;
 
-    uint16_t temp_uart;
+//    uint32_t temp_uart;
 //    UART0_FlushTxBuf();
 //    UART0_FlushRxBuf();
 //    #ifdef __USERS485__
@@ -65,13 +65,13 @@ UART::UART(uint32_t  u32Freq)
 
     UCSR0B = 0x00; //disable while setting baud rate
     UCSR0A = 0x00;
-    UCSR0C = (UCSR0C & 0xF9) | 0x06; //uart0_8bit
+    UCSR0C = 1<<UCSZ01 | 1<<UCSZ00; //uart0_8bit
+//    UCSR0C = (UCSR0C & 0xF9) | 0x06; //uart0_8bit
 
-    temp_uart  = (uint16_t)((F_CPU / (u32Freq*16))-1);
-    UBRR0L = (uint8_t)temp_uart;         //set baud rate lo
-    UBRR0H = (uint8_t)(temp_uart >> 8);  //set baud rate hi
-              //Transmitter Enable, Receiver Enable, TX Complete Interrupt Enable, RX Complete Interrupt Enable
-    UCSR0B  = 1<<TXEN0 | 1<<RXEN0 | 0<<TXCIE0| 1<<RXCIE0;
+    UBRR0 = (uint16_t)((F_CPU / (u32Freq*16))-1);
+
+     //Transmitter Enable, Receiver Enable, TX Complete Interrupt Enable, RX Complete Interrupt Enable
+    UCSR0B  = 1<<TXEN0 | 1<<RXEN0 | 0<<TXCIE0| 1<<RXCIE0|0<<UCSZ02;
 }
 /***************************************************************************************/
 /**               Transmitter                                                         **/
@@ -108,7 +108,8 @@ void UART::sendByte()
 {
     if(TxXferCount > 0)
     {
-        if((UCSR0A & UDRE0) != UDRE0)
+        uint8_t UDRE0_bit = 1 << UDRE0;
+        if((UCSR0A & UDRE0_bit) == UDRE0_bit)
         {
             UDR0 = *pTxBuffPtr;
             pTxBuffPtr++;

@@ -1,7 +1,7 @@
 #include "tim0.h"
 #include "common.h"
 
-#include "clock.h"
+
 
 
 #include <avr/io.h>

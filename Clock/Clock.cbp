@@ -49,14 +49,14 @@
 			<Add after="avr-objcopy --no-change-warnings -j .eeprom --change-section-lma .eeprom=0 -O ihex $(TARGET_OUTPUT_FILE) $(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).eep" />
 			<Add after="avr-size --mcu=atmega328p --format=avr $(TARGET_OUTPUT_FILE)" />
 		</ExtraCommands>
-		<Unit filename="inc/clock.h" />
+		<Unit filename="inc/ClockT.h" />
 		<Unit filename="inc/common.h" />
 		<Unit filename="inc/gpio.h" />
 		<Unit filename="inc/main.h" />
 		<Unit filename="inc/tablo.h" />
 		<Unit filename="inc/tim0.h" />
 		<Unit filename="inc/uart.h" />
-		<Unit filename="src/clock.cpp" />
+		<Unit filename="src/ClockT.cpp" />
 		<Unit filename="src/common.c">
 			<Option compilerVar="CC" />
 		</Unit>

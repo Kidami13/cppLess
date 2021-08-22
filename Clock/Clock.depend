@@ -75,48 +75,48 @@
 	<stdint.h>
 	"common.h"
 
-1629021307 d:\project\ulya\cppless\clock\inc\common.h
+1629638600 d:\project\ulya\cppless\clock\inc\common.h
 	"stdint.h"
 	<avr/io.h>
 	<avr/pgmspace.h>
 
-1629024635 d:\project\ulya\cppless\clock\inc\tablo.h
+1629638600 d:\project\ulya\cppless\clock\inc\tablo.h
 	"common.h"
 	<avr/io.h>
 	<avr/pgmspace.h>
 	"stdint.h"
 
-1629021307 d:\project\ulya\cppless\clock\inc\tim0.h
+1629638600 d:\project\ulya\cppless\clock\inc\tim0.h
 	"stdint.h"
 	"common.h"
 
-1629021307 source:d:\project\ulya\cppless\clock\src\common.c
+1629638600 source:d:\project\ulya\cppless\clock\src\common.c
 	"common.h"
 
-1629021307 source:d:\project\ulya\cppless\clock\src\gpio.cpp
+1629638600 source:d:\project\ulya\cppless\clock\src\gpio.cpp
 	"gpio.h"
 
-1629021307 d:\project\ulya\cppless\clock\inc\gpio.h
+1629638600 d:\project\ulya\cppless\clock\inc\gpio.h
 	<avr/io.h>
 	"stdint.h"
 
-1629021307 source:d:\project\ulya\cppless\clock\src\main.cpp
+1629640396 source:d:\project\ulya\cppless\clock\src\main.cpp
 	<avr/io.h>
 	<util/atomic.h>
+	"ClockT.h"
 	"common.h"
 	"gpio.h"
 	"tim0.h"
 	"tablo.h"
-	"clock.h"
+	"uart.h"
 
-1629021307 source:d:\project\ulya\cppless\clock\src\tim0.cpp
+1629638701 source:d:\project\ulya\cppless\clock\src\tim0.cpp
 	"tim0.h"
 	"common.h"
-	"clock.h"
 	<avr/io.h>
 	<avr/interrupt.h>
 
-1629021742 source:d:\project\ulya\cppless\clock\src\tablo.cpp
+1629640030 source:d:\project\ulya\cppless\clock\src\tablo.cpp
 	"tablo.h"
 	"gpio.h"
 	"string.h"
@@ -134,4 +134,23 @@
 1629384901 d:\project\ulyana\cppless\cppless\clock\inc\uart.h
 	"stdint.h"
 	"common.h"
+
+1629638600 d:\project\ulya\cppless\clock\inc\uart.h
+	"stdint.h"
+	"common.h"
+
+1629638600 source:d:\project\ulya\cppless\clock\src\uart.cpp
+	"uart.h"
+	<avr/io.h>
+	<avr/interrupt.h>
+	<avr/pgmspace.h>
+	<stdio.h>
+	<string.h>
+
+1629640099 source:d:\project\ulya\cppless\clock\src\clockt.cpp
+	"ClockT.h"
+	"tablo.h"
+
+1629641735 d:\project\ulya\cppless\clock\inc\clockt.h
+	"stdint.h"
 

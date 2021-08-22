@@ -44,9 +44,11 @@ TABLO::TABLO()
 
     Enable(TRUE);
     SendCMD(10, 0, 0, 0);
-    //Clear();
-    send(89,23,67);
+    Clear();
+    //send(89,23,67);
 }
+
+
 
 void TABLO::SendCMD(uint8_t Bright, uint8_t sv, uint8_t nu, uint8_t slp)
 {

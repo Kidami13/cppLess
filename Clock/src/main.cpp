@@ -15,6 +15,7 @@ extern GPIO GPIOB;
 extern UART uart0;
 ClockT clock;
 
+
 int main(void)
 {
     cli();

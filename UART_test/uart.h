@@ -11,14 +11,12 @@ class UART
     public:
         UART();
         UART(uint32_t  u32Freq);
-        void Write(char *pData, uint16_t Size);
+        void Write(uint8_t *pData, uint16_t Size);
         void WriteLine(const char *pData);
         void WriteLine(char *pData);
         void Transmit();
 
         uint16_t ReadLine(char *pData);
-
-        void Debug();
 
     protected:
 
@@ -41,4 +39,6 @@ class UART
         char getChar();
 };
 
+
+extern UART uart0;
 #endif // UART_H

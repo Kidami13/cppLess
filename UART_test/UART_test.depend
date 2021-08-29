@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1630076611 source:d:\project\ulyana\cppless\cppless\uart_test\main.cpp
+	<iostream>
+	"uart.h"
+
+1630076754 source:d:\project\ulyana\cppless\cppless\uart_test\uart.cpp
+	"uart.h"
+	<stdio.h>
+	<string.h>
+
+1630072019 d:\project\ulyana\cppless\cppless\uart_test\uart.h
+	"stdint.h"
+	"common.h"
+
+1630071181 d:\project\ulyana\cppless\cppless\uart_test\common.h
+	"stdint.h"
+

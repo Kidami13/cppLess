@@ -22,13 +22,15 @@ int main(void)
 
     sei();
 
-    uint8_t test[] = "Test\r\ntest       ";
-    uart0.Transmit(test,10);
+
+//    uint8_t test[] = "Test\r\ntest       ";
+//    uart0.Write(test,10);
 
     while(1)
     {
-        uart0.sendByte();
+        uart0.Transmit();
         clock.TG();
+        clock.TR();
 
 
     };

@@ -1,6 +1,10 @@
 #include "ClockT.h"
 #include "tablo.h"
 #include "tim0.h"
+#include "uart.h"
+
+extern UART uart0;
+
 ClockT::ClockT()
 {
     minu = 13;
@@ -10,6 +14,7 @@ ClockT::ClockT()
     mouth = 8;
     ear = 21;
 }
+
 void ClockT::TG(){
     if(tim0.get_timeout(&milis)== TRUE){
          tim0.set_timeout(&milis, 1000);
@@ -44,3 +49,20 @@ void ClockT::TG(){
     }
 }
 
+void ClockT::TR()
+{
+    char buf[100] = {0};
+
+    if(uart0.ReadLine(buf))
+    {
+        uart0.WriteLine(PSTR("<--receive string-->"));
+//        uart0.WriteLine("<--receive string-->");
+//        uart0.Debug();
+        uart0.WriteLine(buf);
+    }
+    if(tim0.get_timeout(&gtimeout)== TRUE)
+    {
+        tim0.set_timeout(&gtimeout, 5000);
+//        uart0.WriteLine(PSTR("call TR"));
+    }
+}

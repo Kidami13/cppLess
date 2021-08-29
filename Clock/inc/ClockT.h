@@ -7,6 +7,7 @@ class ClockT
     public:
         ClockT();
         void TG();
+        void TR();
 
 
     protected:
@@ -20,6 +21,8 @@ class ClockT
         uint8_t day;
         uint8_t mouth;
         uint8_t ear;
+
+        uint32_t gtimeout;
 
 };
 

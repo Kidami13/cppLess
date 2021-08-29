@@ -7,14 +7,14 @@
 	<avr/io.h>
 	<avr/pgmspace.h>
 
-1629473132 source:d:\project\ulyana\cppless\cppless\clock\src\main.cpp
+1630229255 source:d:\project\ulyana\cppless\cppless\clock\src\main.cpp
 	<avr/io.h>
 	<util/atomic.h>
+	"ClockT.h"
 	"common.h"
 	"gpio.h"
 	"tim0.h"
 	"tablo.h"
-	"clock.h"
 	"uart.h"
 
 1629367429 source:d:\project\ulyana\cppless\cppless\clock\src\gpio.cpp
@@ -24,7 +24,7 @@
 	<avr/io.h>
 	"stdint.h"
 
-1629367429 source:d:\project\ulyana\cppless\cppless\clock\src\tablo.cpp
+1629968585 source:d:\project\ulyana\cppless\cppless\clock\src\tablo.cpp
 	"tablo.h"
 	"gpio.h"
 	"string.h"
@@ -37,10 +37,9 @@
 	<avr/pgmspace.h>
 	"stdint.h"
 
-1629367429 source:d:\project\ulyana\cppless\cppless\clock\src\tim0.cpp
+1629968585 source:d:\project\ulyana\cppless\cppless\clock\src\tim0.cpp
 	"tim0.h"
 	"common.h"
-	"clock.h"
 	<avr/io.h>
 	<avr/interrupt.h>
 
@@ -123,7 +122,7 @@
 	"stdio.h"
 	<avr/pgmspace.h>
 
-1629474608 source:d:\project\ulyana\cppless\cppless\clock\src\uart.cpp
+1630232691 source:d:\project\ulyana\cppless\cppless\clock\src\uart.cpp
 	"uart.h"
 	<avr/io.h>
 	<avr/interrupt.h>
@@ -131,7 +130,7 @@
 	<stdio.h>
 	<string.h>
 
-1629384901 d:\project\ulyana\cppless\cppless\clock\inc\uart.h
+1630231437 d:\project\ulyana\cppless\cppless\clock\inc\uart.h
 	"stdint.h"
 	"common.h"
 
@@ -152,5 +151,14 @@
 	"tablo.h"
 
 1629641735 d:\project\ulya\cppless\clock\inc\clockt.h
+	"stdint.h"
+
+1630233722 source:d:\project\ulyana\cppless\cppless\clock\src\clockt.cpp
+	"ClockT.h"
+	"tablo.h"
+	"tim0.h"
+	"uart.h"
+
+1630229260 d:\project\ulyana\cppless\cppless\clock\inc\clockt.h
 	"stdint.h"
 

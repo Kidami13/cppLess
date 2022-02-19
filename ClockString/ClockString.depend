@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1645257569 source:d:\project\ulyana\cppless\cppless\clockstring\main.cpp
+	<iostream>
+	"ClockT.h"
+
+1645257482 source:d:\project\ulyana\cppless\cppless\clockstring\clockt.cpp
+	<iostream>
+	"ClockT.h"
+
+1630225660 d:\project\ulyana\cppless\cppless\clockstring\clockt.h
+	"stdint.h"
+

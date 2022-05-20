@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1653036083 source:d:\project\ulyana\cppless\cppless\clock_class\main.cpp
+	<windows.h>
+	<iostream>
+
